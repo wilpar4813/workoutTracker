@@ -2,6 +2,7 @@
 var path = require("path");
 module.exports = function(app) {
     app.get("/", res => {
+        console.log("line 5 htmlRoutes");
         res.sendFile(path.join(__dirname + "/public/index.html"));
     });
 
