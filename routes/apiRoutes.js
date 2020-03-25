@@ -57,4 +57,5 @@ app.get("/api/workouts/range", function(res) {
             res.json(err);
         });
 });
+
 module.exports = app;

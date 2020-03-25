@@ -1,16 +1,18 @@
 // HTML ROUTES
 var path = require("path");
-module.exports = function(app) {
-    app.get("/", res => {
-        console.log("line 5 htmlRoutes");
-        res.sendFile(path.join(__dirname + "/public/index.html"));
-    });
+const app = require("express").Router();
 
-    app.get("/exercise", res => {
-        res.sendFile(path.join(__dirname + "/public/exercise.html"));
-    });
+app.get("/", res => {
+    console.log("line 5 htmlRoutes");
+    res.sendFile(path.join(__dirname + "../public/index.html"));
+});
 
-    app.get("/stats", res => {
-        res.sendFile(path.join(__dirname + "/public/stats.html"));
-    });
-};
+app.get("/exercise", res => {
+    res.sendFile(path.join(__dirname + "../public/exercise.html"));
+});
+
+app.get("/stats", res => {
+    res.sendFile(path.join(__dirname + "../public/stats.html"));
+});
+
+module.exports = app;

@@ -1,0 +1,29 @@
+{
+  "name": "workouttracker",
+  "version": "1.0.0",
+  "description": "Homework 17",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilpar4813/workoutTracker.git"
+  },
+  "author": "Tripp Parham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilpar4813/workoutTracker/issues"
+  },
+  "homepage": "https://github.com/wilpar4813/workoutTracker#readme"
+}
