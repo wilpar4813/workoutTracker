@@ -1,7 +1,8 @@
 const app = require("express").Router();
 const workOut = require("../models/workout.js");
 
-app.get("/api/workouts", function(res) {
+app.get("/api/workouts", function(req, res) {
+    console.log("Line 5 API");
     workOut
         .find({})
         .then(data => {
@@ -20,7 +21,6 @@ app.put("/api/workouts/:id", function(req, res) {
             { $push: { exercises: req.body } },
             { new: true }
         )
-
         .then(data => {
             console.log(data);
             res.json(data);
@@ -31,8 +31,8 @@ app.put("/api/workouts/:id", function(req, res) {
         });
 });
 
-// POST to create workout
-app.post("/api/workouts", function(res) {
+// Create workout
+app.post("/api/workouts", function(req, res) {
     console.log("Adding a new Exercise");
     workOut
         .create({})
@@ -46,7 +46,7 @@ app.post("/api/workouts", function(res) {
 });
 
 // Get workouts from range
-app.get("/api/workouts/range", function(res) {
+app.get("/api/workouts/range", function(req, res) {
     workOut
         .find()
         .then(data => {
