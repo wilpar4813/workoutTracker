@@ -24,8 +24,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 });
 
 //Route setup. Import api and html routes
-require("./routes/apiRoutes.js");
-require("./routes/htmlRoutes.js");
+app.use(require("./routes/apiRoutes.js"));
+app.use(require("./routes/htmlRoutes.js"));
 
 //Start listening on assigned porty
 app.listen(PORT, function() {

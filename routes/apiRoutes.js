@@ -1,6 +1,7 @@
 const app = require("express").Router();
 const workOut = require("../models/workout.js");
 
+
 app.get("/api/workouts", function(req, res) {
     console.log("Line 5 API");
     workOut
@@ -10,15 +11,18 @@ app.get("/api/workouts", function(req, res) {
             res.json(data);
         })
         .catch(err => {
-            console.log("The following error has occured: ", err);
+            console.log(
+                "The following error has occured line 13 apiRoutes.js: ",
+                err
+            );
         });
 });
 
-app.put("/api/workouts/:id", function(req, res) {
+app.put("/api/workouts/:id", function({ body, params }, res) {
     workOut
         .findByIdAndUpdate(
             params.id,
-            { $push: { exercises: req.body } },
+            { $push: { exercises: body } },
             { new: true }
         )
         .then(data => {
@@ -26,7 +30,10 @@ app.put("/api/workouts/:id", function(req, res) {
             res.json(data);
         })
         .catch(err => {
-            console.log("The following error has occurred: ", err);
+            console.log(
+                "The following error has occurred line 29 apiRoutes.js: ",
+                err
+            );
             res.json(err);
         });
 });
@@ -40,21 +47,39 @@ app.post("/api/workouts", function(req, res) {
             res.json(data);
         })
         .catch(err => {
-            console.log("The following error has occured: ", err);
+            console.log(
+                "The following error has occurred line 43 apiRoutes.js: ",
+                err
+            );
             res.json(err);
         });
 });
 
-// Get workouts from range
-app.get("/api/workouts/range", function(req, res) {
+//GET stats for dashboard
+app.get("/stats", function(req, res) {
     workOut
-        .find()
+        .find({})
+        .then(function(data) {
+            console.log("Line 61 apiRoute:");
+            res.json(data);
+        })
+        .catch(err => {
+            console.log(
+                "The following error has occurred line 67 apiRoutes.js: ",
+                err
+            );
+            res.json(err);
+        });
+});
+
+app.get("/api/workouts/range", (req, res) => {
+    workOut
+        .find({})
         .then(data => {
             res.json(data);
         })
         .catch(err => {
-            console.log("The following error has occured: ", err);
-            res.json(err);
+            res.status(400).json(err);
         });
 });
 
