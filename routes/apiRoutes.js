@@ -1,7 +1,6 @@
 const app = require("express").Router();
 const workOut = require("../models/workout.js");
 
-
 app.get("/api/workouts", function(req, res) {
     console.log("Line 5 API");
     workOut
@@ -18,11 +17,11 @@ app.get("/api/workouts", function(req, res) {
         });
 });
 
-app.put("/api/workouts/:id", function({ body, params }, res) {
+app.put("/api/workouts/:id", function(req, res) {
     workOut
         .findByIdAndUpdate(
-            params.id,
-            { $push: { exercises: body } },
+            { _id: req.params.id },
+            { $push: { exercises: req.body } },
             { new: true }
         )
         .then(data => {
@@ -39,10 +38,10 @@ app.put("/api/workouts/:id", function({ body, params }, res) {
 });
 
 // Create workout
-app.post("/api/workouts", function(req, res) {
+app.post("/api/workouts", function({ body }, res) {
     console.log("Adding a new Exercise");
     workOut
-        .create({})
+        .create(body)
         .then(data => {
             res.json(data);
         })
@@ -56,7 +55,7 @@ app.post("/api/workouts", function(req, res) {
 });
 
 //GET stats for dashboard
-app.get("/stats", function(req, res) {
+app.get("/api/workouts/stats", function(req, res) {
     workOut
         .find({})
         .then(function(data) {
