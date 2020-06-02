@@ -25,69 +25,65 @@ As an exercise enthusiast, keeping track of daily workouts is very important.  W
 * Visit the following link to experience the Workout Tracker:
 https://fitmarks.herokuapp.com 
 
-**_Operating instructions_**
+## Operating instructions
+* From the homepage, users can create a new workout, or continue and existing workout.
+* Users can select between cardio and resistance training.
+* For cardio, users can enter distance and duration time for each exercise.
+* For resistance, users can enter the weight, number of sets, number of reps and duration in minutes for each exercise.
+* By clicking the Dashboard tab, users can see their weekly workout stats.
 
--   From the homepage, users can create a new workout, or continue and existing workout.
--   Users can select between cardio and resistance training.
--   For cardio, users can enter distance and duration time for each exercise.
--   For resistance, users can enter the weight, number of sets, number of reps and duration in minutes for each exercise.
--   By clicking the Dashboard tab, users can see their weekly workout stats.
+## List of files included in the following structure
 
-**_List of files included in the following structure_**
+* FORME.md
+* LICENSE
+* models
+    * index.js
+    * workout.js
+* package-lock.json
+* package.json
+* public
+    * api.js
+    * exercise.html
+    * exercise.js
+    * index.html
+    * stats.html
+    * stats.js
+    * style.css
+    * workout-style.css
+    * workout.js
+* README
+* routes
+    * apiROutes
+    * htmlRoutes
+* seeders
+    * seeds.js
+* server.js
 
--   FORME.md
--   LICENSE
--   models
-    -   index.js
-    -   workout.js
--   package-lock.json
--   package.json
--   public
-    -   api.js
-    -   exercise.html
-    -   exercise.js
-    -   index.html
-    -   stats.html
-    -   stats.js
-    -   style.css
-    -   workout-style.css
-    -   workout.js
--   README
--   routes
-    -   apiROutes
-    -   htmlRoutes
--   seeders
-    -   seeds.js
--   server.js
-
-**_Copyright and licensing information_**
+## Copyright and licensing information
 
 None
 
-**_Contact information for the distributor or programmer_**
+## Contact information for the distributor or programmer
 
-Site Developer: Tripp Parham Email: tripp.parham@me.com
+*Site Developer: Tripp Parham 
+*Email: tripp.parham@me.com
 
 **_Known bugs[0]_**
 
 None
 
-**_Troubleshooting[6]_**
+## Troubleshooting[6]
 
--   From the homepage, users can create a new workout, or continue and existing workout correctly.
--   Users can select between cardio and resistance training correctly
--   For cardio, users can enter distance and duration time for each exercise correctly
--   For resistance, users can enter the weight, number of sets, number of reps and duration in minutes for each exercise correctly
--   Clicking the Dashboard tab, users can see their weekly workout stats correctly.
+* From the homepage, users can create a new workout, or continue and existing workout correctly.
+* Users can select between cardio and resistance training correctly
+* For cardio, users can enter distance and duration time for each exercise correctly
+* For resistance, users can enter the weight, number of sets, number of reps and duration in minutes for each exercise correctly
+* Clicking the Dashboard tab, users can see their weekly workout stats correctly.
 
-**_Credits and acknowledgments_**
+## Credits and acknowledgments
 
-Special thanks to the Instructors and TA's at the UNC Coding Bootcamp. They are an awesome team.:-) Also, I couldn't have completed my tutor, Karen Largent.
+### Special thanks to the Instructors and Staff at the UNC Coding Bootcamp. They are an awesome team.:-) I recommend Trilogy to anyone that wants to learn Javascript Web Development. They have a fine tuned program and lots of great resources.
 
-Thanks to my Mom in heaven that paid for my Coding Bootcamp.
+## Site Updates
 
-**_Change Log_**
-
-**_Site Updates_**
-
--   Version 1.0.0 Released Tuesday April 1st, 2020
+* Version 1.0.0 Released Tuesday April 1st, 2020
