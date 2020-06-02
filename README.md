@@ -1,36 +1,29 @@
-# Unit 17 Workout Tracker
+# Workout Tracker
 
-**_workoutTracker_**
-
--   READ ME
--   Homework 17
--   Workout Tracker
--   Version: 1.0.0
--   Web Design By Tripp Parham
--   Published: Wednesday April 1st 2020
+## READ ME
+*   Version: 1.0.0
+*   Web Design By Tripp Parham
+*   Published: Wednesday April 1st 2020
 
 # Description
--   As an exercize enthusiast, keeping track of daily workouts in important.  With the Workout Tracker, users can create and easily track their daily workouts.  Workout statistics are displayed in graphical format to easily track gains or loses. Workout Tracker utilizes Node, NoSQL/MongoDB, HTML, CSS, and Javascript.
+As an exercise enthusiast, keeping track of daily workouts is very important.  With the Workout Tracker, users can create and easily track their daily workouts.  Workout statistics are displayed in graphical format to easily track gains or loses. Workout Tracker utilizes Node, NoSQL/MongoDB, HTML, CSS, and Javascript.
 
 # Screenshots
+
 ![Fitness Tracker Image](./public//img/Fitness.png)
+
+
 ![Fitness Tracker Image](./public//img/Fitness2.png)
+
+
 ![Fitness Tracker Image](./public/img/Fitness3.png)
 
-**_About Workout Tracker_**
 
--   As an exercize enthusiast, keeping track of daily workouts in important.  With the Workout Tracker, users can create and easily track their daily workouts.  Workout statistics are displayed in graphical format to easily track gains or loses. 
-
-**_Configuration instructions_**
-
--   No configuration necessory
--   Vist the following link to experience the Workout Tracker:
-
-**_ https://fitmarks.herokuapp.com _**
-
-**_Installation instructions_**
-
--Workout Tracker works on most main stream browsers using the link above.
+## Configuration instructions
+* Workout Tracker works on most main stream browsers using the link above.
+* No configuration necessory
+* Visit the following link to experience the Workout Tracker:
+https://fitmarks.herokuapp.com 
 
 **_Operating instructions_**
 
