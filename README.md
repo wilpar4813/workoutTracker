@@ -1,4 +1,4 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# Unit 17 Workout Tracker
 
 **_workoutTracker_**
 
@@ -9,9 +9,17 @@
 -   Web Design By Tripp Parham
 -   Published: Wednesday April 1st 2020
 
+# Description
+-   As an exercize enthusiast, keeping track of daily workouts in important.  With the Workout Tracker, users can create and easily track their daily workouts.  Workout statistics are displayed in graphical format to easily track gains or loses. Workout Tracker utilizes Node, NoSQL/MongoDB, HTML, CSS, and Javascript.
+
+# Screenshots
+![Fitness Tracker Image](./public//img/Fitness.png)
+![Fitness Tracker Image](./public//img/Fitness2.png)
+![Fitness Tracker Image](./public/img/Fitness3.png)
+
 **_About Workout Tracker_**
 
--   With the workout tracker, users can create and easily track their daily workouts.
+-   As an exercize enthusiast, keeping track of daily workouts in important.  With the Workout Tracker, users can create and easily track their daily workouts.  Workout statistics are displayed in graphical format to easily track gains or loses. 
 
 **_Configuration instructions_**
 
