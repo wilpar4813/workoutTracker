@@ -33,7 +33,6 @@ https://fitmarks.herokuapp.com
 * By clicking the Dashboard tab, users can see their weekly workout stats.
 
 ## List of files included in the following structure
-
 * FORME.md
 * LICENSE
 * models
@@ -60,20 +59,16 @@ https://fitmarks.herokuapp.com
 * server.js
 
 ## Copyright and licensing information
-
 None
 
 ## Contact information for the distributor or programmer
+* Site Developer: Tripp Parham 
+* Email: tripp.parham@me.com
 
-*Site Developer: Tripp Parham 
-*Email: tripp.parham@me.com
-
-**_Known bugs[0]_**
-
+## Known bugs[0]
 None
 
 ## Troubleshooting[6]
-
 * From the homepage, users can create a new workout, or continue and existing workout correctly.
 * Users can select between cardio and resistance training correctly
 * For cardio, users can enter distance and duration time for each exercise correctly
@@ -81,9 +76,7 @@ None
 * Clicking the Dashboard tab, users can see their weekly workout stats correctly.
 
 ## Credits and acknowledgments
-
 ### Special thanks to the Instructors and Staff at the UNC Coding Bootcamp. They are an awesome team.:-) I recommend Trilogy to anyone that wants to learn Javascript Web Development. They have a fine tuned program and lots of great resources.
 
 ## Site Updates
-
 * Version 1.0.0 Released Tuesday April 1st, 2020
